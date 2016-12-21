@@ -46,7 +46,7 @@ ActionController::Routing::Routes.draw do |map|
 end
 
 Rails::Application.routes.draw do
-  get "say_hello" => "welcome#say"
+  get "/say_hello" => "welcome#say"
   get "welcome" => "welcome#index"
   # ...
 end
