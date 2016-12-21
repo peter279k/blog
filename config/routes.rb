@@ -41,3 +41,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 end
+
+Rails::Application.routes.draw do
+  get "blog/say_hello" => "welcome#say"
+  # ...
+end
