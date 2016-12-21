@@ -40,9 +40,5 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-end
-
-Rails::Application.routes.draw do
-  get "blog/say_hello" => "welcome#say"
-  # ...
+  map.connect '/blog/say_hello', :controller => 'welcome', :action => 'say'
 end
